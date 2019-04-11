@@ -12,6 +12,76 @@
    
 </head>
 <body>
+    
+<div class="container">
+        
+<div class="row">
+    <div class="col-xs-12">
+        <div class="jumbotron">
+            <h1>Trivia Game!!</h1>
+        </div>
+    </div>
+</div>
+<!--Used Bootstrap in html for rows and columns for the middle section which contains the question, answers, and scoreboard-->
+ <!-- Scoreboard -->
+ <div clas="row">
+ <div class="col-xs-12 col-md-5">
+    <div class="panel panel-default" id="scoreboard">
+        <div class="panel-body">
+            <div class="row" id="scoreboard-title">
+                <div class="col-xs-4">
+                    <h3 id="scoreboard-lbl-left"></h3> <!---was trying to use float in css but this made it much easier to keep everything aligned.-->
+                </div>
+                <div class="col-xs-4">
+                    <h3 id="scoreboard-lbl-center"></h3>
+                </div>
+                <div class="col-xs-4">
+                    <h3 id="scoreboard-lbl-right"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <h2 class="scoreboard-content" id="scoreboard-left"></h2> <!---left side of scoreboard shows correctly answered-->
+                </div>
+                <div class="col-xs-4">
+                    <h2 class="scoreboard-content" id="timer"></h2>
+                </div>
+                <div class="col-xs-4">
+                    <h2 class="scoreboard-content" id="scoreboard-right"> </h2>   <!--right side shows incorrect-->                                                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="panel panel-default"> 
+            <div class="panel-heading">
+                <h4 class="panel-title" id="title"></h4>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <!--Main Section-->
+                    <div class="col-xs-12 col-md-7">
+                        <div id="content"> <!---where the questions and multiple choice answers go-->
+                        </div>
+                    </div>
+                     <div class="col-xs-12" id="restart">
+                         </div>
+                </div>
+                        </div>                           
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
 
 </body>
 </html>
