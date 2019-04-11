@@ -1,4 +1,4 @@
-
+//.append or .html variables. and button variable 
 var btnStart = $("<button>").attr({"class":"btn btn-default"});
 var questionDiv = $("<h2>");
 var answerDiv = $("<p>")
