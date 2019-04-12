@@ -63,7 +63,7 @@ var actualquestion = [{
    bonus: ''
 },
 {
-   question: "Which head coach had the best win/lose ratios in entirety of the NBA",
+   question: "Which head coach had the best win/lose ratios in the entirety of the NBA",
    options: ["Phil Jackson", "Gregg Popovich", "Steve Kerr", "Don Nelson", "Pat Riley"],
    answer: 'Phil Jackon',
    userAnswer: '',
@@ -107,3 +107,40 @@ var actualquestion = [{
    time: 0,
    bonus: ''
 }]
+
+window.onload = function() {
+    // load initial timer
+    var convertedTimer = convertTime(initialTimer)
+    $("#timer").html(convertedTimer)
+
+    // load initial score
+    updateScoreboard();
+
+    // load start button and initial message
+    btnStart.text("Start Game");
+    
+    answerDiv.html("<p>Challenge</p>" 
+    + "<p>Also, click the scoreboard to toggle its display between the current game score and overall record</p>")
+   .attr({"class":"msg"});
+    $("#content").append(btnStart, answerDiv);
+
+    // click events for start button, timer, and scoreboard
+    btnStart.on("click", function(){
+        startGame();
+    })
+
+    $("#timer").on("click", function(){
+        adjustTimer();
+    })
+
+    $("#scoreboard-title").on("click", function(){
+        if(!activeGame){
+            if(scoreboardSwitcher){
+                scoreboardSwitcher = false;
+            } else {
+                scoreboardSwitcher = true;
+            }
+        updateScoreboard();
+        }
+    })
+}
