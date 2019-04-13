@@ -1,11 +1,22 @@
+
+
+
+
 .jumbotron{
     background-image: url(https://www.underconsideration.com/brandnew/archives/nba_logo_wordmark.png);
     background-size: 355px;
+    
 
 }
 .Trivia{
     font-family: 'Luckiest Guy', cursive;
-    color: yellow;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    background:white;
+    width: 50%;
+    height:50%;
+    margin-left: 300px;
+    
 }
 .btn{
     width: 100%
@@ -34,7 +45,8 @@ h2, p{
     height: 50px;
     line-height: 125%;
     margin-top: 0px;
-    
+    background-color: gray;
+    box-align: center;
 }
 
 
@@ -49,7 +61,7 @@ h2, p{
 }
 
 #scoreboard{
-    background: gray;
+    background: black;
     padding: none;
 }
 

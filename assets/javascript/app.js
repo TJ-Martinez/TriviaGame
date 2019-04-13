@@ -232,14 +232,14 @@ function showResult(userAnswer){
         // result for a correct answer
         if(userAnswer == correctAnswer){
             questionDiv.text("Correct!");
-            message = "You got it! " + userAnswer + " is the correct answer!";
+            message = "Point for the HOME Team! " + userAnswer + " is the correct answer!";
             correctCount++;
             actualquestion[qCount].correct = true;
         
         //result for an incorrect answer
         } else {
             questionDiv.text("Wrong!");
-            message = "Your Answer: " + userAnswer + "<br>" + "Correct Answer: " + correctAnswer;
+            message = "Point for the AWAY TEAM. You answered: " + userAnswer + "<br>" + "Correct Answer: " + correctAnswer;
             incorrectCount++;
         }
 
