@@ -1,13 +1,12 @@
-@font-face{
-    font-family: digital-7;
-    src: url("../fonts/style-7_digital-7/digital-7 (mono).ttf")
-}
+.jumbotron{
+    background-image: url(https://www.underconsideration.com/brandnew/archives/nba_logo_wordmark.png);
+    background-size: 355px;
 
-@font-face{
-    font-family: BlackOpsOne;
-    src: url("../fonts/BlackOpsOne-Regular.ttf")
 }
-
+.Trivia{
+    font-family: 'Luckiest Guy', cursive;
+    color: yellow;
+}
 .btn{
     width: 100%
 }
@@ -22,14 +21,12 @@ h2, p{
 }
 
 #reset{
-    background: rgb(38, 75, 87);
+    background: rgb(233, 236, 13);
     color: white;
     font-weight: bolder;
 }
 
 .scoreboard-content{
-    font-family: digital-7;
-    background: black;
     color: yellow;
     font-size: 250%; 
     border-style: solid;
@@ -43,7 +40,6 @@ h2, p{
 
 
 #scoreboard-title{
-    font-family: BlackOpsOne;
     color: white;
     text-align: center;
 }
